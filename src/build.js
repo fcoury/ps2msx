@@ -58,7 +58,6 @@ void KbdRptParser::OnKeyDown(uint8_t mod, uint8_t key)
 
   Serial.print("DN ");
   PrintKey(mod, key);
-  uint8_t c = OemToAscii(mod, key);
 
   Serial.print("ASCII: ");
   Serial.println((char)key);
@@ -75,7 +74,6 @@ void KbdRptParser::OnKeyUp(uint8_t mod, uint8_t key)
 
   Serial.print("UP ");
   PrintKey(mod, key);
-  uint8_t c = OemToAscii(mod, key);
 
   Serial.print("ASCII: ");
   Serial.println((char)key);
