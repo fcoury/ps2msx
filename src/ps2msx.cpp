@@ -68,70 +68,70 @@ void KbdRptParser::OnKeyDown(uint8_t mod, uint8_t key)
   Serial.println((char)key);
 
   switch(key) {
-  case 0x29: // esc
+  case 0x29: // esc -> esc 
     kbSend(0x76);
     break;
 
-  case 0x3a: // f1
+  case 0x3a: // f1 -> f1 
     kbSend(0x05);
     break;
 
-  case 0x3b: // f2
+  case 0x3b: // f2 -> f2 
     kbSend(0x06);
     break;
 
-  case 0x3c: // f3
+  case 0x3c: // f3 -> f3 
     kbSend(0x04);
     break;
 
-  case 0x3d: // f4
+  case 0x3d: // f4 -> f4 
     kbSend(0x0c);
     break;
 
-  case 0x3e: // f5
+  case 0x3e: // f5 -> f5 
     kbSend(0x03);
     break;
 
-  case 0x3f: // f6
+  case 0x3f: // f6 -> f6 
     kbSend(0x0b);
     break;
 
-  case 0x40: // f7
+  case 0x40: // f7 -> f7 
     kbSend(0x83);
     break;
 
-  case 0x41: // f8
+  case 0x41: // f8 -> f8 
     kbSend(0x0a);
     break;
 
-  case 0x42: // f9
+  case 0x42: // f9 -> f9 
     kbSend(0x01);
     break;
 
-  case 0x43: // f10
+  case 0x43: // f10 -> f10 
     kbSend(0x09);
     break;
 
-  case 0x44: // f11
+  case 0x44: // f11 -> f11 
     kbSend(0x78);
     break;
 
-  case 0x45: // f12
+  case 0x45: // f12 -> f12 
     kbSend(0x07);
     break;
 
-  case 0x46: // print_screen
+  case 0x46: // print_screen -> print_screen 
     kbSend(0xe0);
     kbSend(0x12);
     kbSend(0xe0);
     kbSend(0x7c);
     break;
 
-  case 0x47: // scroll_lock
+  case 0x47: // scroll_lock -> scroll_lock 
     kbSend(0x7e);
     break;
 
-  case 0x48: // pause
+  case 0x48: // pause -> pause 
     kbSend(0xe1);
     kbSend(0x14);
     kbSend(0x77);
@@ -142,261 +142,261 @@ void KbdRptParser::OnKeyDown(uint8_t mod, uint8_t key)
     kbSend(0x77);
     break;
 
-  case 0x49: // insert
+  case 0x49: // insert -> insert 
     kbSend(0xe0);
     kbSend(0x70);
     break;
 
-  case 0x4a: // home
+  case 0x4a: // home -> home 
     kbSend(0xe0);
     kbSend(0x6c);
     break;
 
-  case 0x4b: // page_up
+  case 0x4b: // page_up -> page_up 
     kbSend(0xe0);
     kbSend(0x7d);
     break;
 
-  case 0x4c: // delete
+  case 0x4c: // delete -> delete 
     kbSend(0xe0);
     kbSend(0x71);
     break;
 
-  case 0x4d: // end
+  case 0x4d: // end -> end 
     kbSend(0xe0);
     kbSend(0x69);
     break;
 
-  case 0x4e: // page_down
+  case 0x4e: // page_down -> page_down 
     kbSend(0xe0);
     kbSend(0x7a);
     break;
 
-  case 0x35: // `
+  case 0x35: // ` -> ` 
     kbSend(0x0e);
     break;
 
-  case 0x1e: // 1
+  case 0x1e: // 1 -> 1 
     kbSend(0x16);
     break;
 
-  case 0x1f: // 2
+  case 0x1f: // 2 -> 2 
     kbSend(0x1e);
     break;
 
-  case 0x20: // 3
+  case 0x20: // 3 -> 3 
     kbSend(0x26);
     break;
 
-  case 0x21: // 4
+  case 0x21: // 4 -> 4 
     kbSend(0x25);
     break;
 
-  case 0x22: // 5
+  case 0x22: // 5 -> 5 
     kbSend(0x2e);
     break;
 
-  case 0x23: // 6
+  case 0x23: // 6 -> 6 
     kbSend(0x36);
     break;
 
-  case 0x24: // 7
+  case 0x24: // 7 -> 7 
     kbSend(0x3d);
     break;
 
-  case 0x25: // 8
+  case 0x25: // 8 -> 8 
     kbSend(0x3e);
     break;
 
-  case 0x26: // 9
+  case 0x26: // 9 -> 9 
     kbSend(0x46);
     break;
 
-  case 0x27: // 0
+  case 0x27: // 0 -> 0 
     kbSend(0x45);
     break;
 
-  case 0x2d: // -
+  case 0x2d: // - -> - 
     kbSend(0x4e);
     break;
 
-  case 0x2e: // =
+  case 0x2e: // = -> = 
     kbSend(0x55);
     break;
 
-  case 0x2a: // backspace
+  case 0x2a: // backspace -> backspace 
     kbSend(0x66);
     break;
 
-  case 0x2b: // tab
+  case 0x2b: // tab -> tab 
     kbSend(0x0d);
     break;
 
-  case 0x14: // q
+  case 0x14: // q -> q 
     kbSend(0x15);
     break;
 
-  case 0x1a: // w
+  case 0x1a: // w -> w 
     kbSend(0x1d);
     break;
 
-  case 0x08: // e
+  case 0x08: // e -> e 
     kbSend(0x24);
     break;
 
-  case 0x15: // r
+  case 0x15: // r -> r 
     kbSend(0x2d);
     break;
 
-  case 0x17: // t
+  case 0x17: // t -> t 
     kbSend(0x2c);
     break;
 
-  case 0x1c: // y
+  case 0x1c: // y -> y 
     kbSend(0x35);
     break;
 
-  case 0x18: // u
+  case 0x18: // u -> u 
     kbSend(0x3c);
     break;
 
-  case 0x0c: // i
+  case 0x0c: // i -> i 
     kbSend(0x43);
     break;
 
-  case 0x12: // o
+  case 0x12: // o -> o 
     kbSend(0x44);
     break;
 
-  case 0x13: // p
+  case 0x13: // p -> p 
     kbSend(0x4d);
     break;
 
-  case 0x2f: // [
+  case 0x2f: // [ -> [ 
     kbSend(0x54);
     break;
 
-  case 0x30: // ]
+  case 0x30: // ] -> ] 
     kbSend(0x5b);
     break;
 
-  case 0x31: // \\
+  case 0x31: // \\ -> \\ 
     kbSend(0x5d);
     break;
 
-  case 0x39: // caps_lock
+  case 0x39: // caps_lock -> caps_lock 
     kbSend(0x58);
     break;
 
-  case 0x04: // a
+  case 0x04: // a -> a 
     kbSend(0x1c);
     break;
 
-  case 0x16: // s
+  case 0x16: // s -> s 
     kbSend(0x1b);
     break;
 
-  case 0x07: // d
+  case 0x07: // d -> d 
     kbSend(0x23);
     break;
 
-  case 0x09: // f
+  case 0x09: // f -> f 
     kbSend(0x2b);
     break;
 
-  case 0x0a: // g
+  case 0x0a: // g -> g 
     kbSend(0x34);
     break;
 
-  case 0x0b: // h
+  case 0x0b: // h -> h 
     kbSend(0x33);
     break;
 
-  case 0x0d: // j
+  case 0x0d: // j -> j 
     kbSend(0x3b);
     break;
 
-  case 0x0e: // k
+  case 0x0e: // k -> k 
     kbSend(0x42);
     break;
 
-  case 0x0f: // l
+  case 0x0f: // l -> l 
     kbSend(0x4b);
     break;
 
-  case 0x33: // ;
+  case 0x33: // ; -> ; 
     kbSend(0x4c);
     break;
 
-  case 0x34: // '
+  case 0x34: // ' -> ' 
     kbSend(0x52);
     break;
 
-  case 0x28: // enter
+  case 0x28: // enter -> enter 
     kbSend(0x5a);
     break;
 
-  case 0x1d: // z
+  case 0x1d: // z -> z 
     kbSend(0x1a);
     break;
 
-  case 0x1b: // x
+  case 0x1b: // x -> x 
     kbSend(0x22);
     break;
 
-  case 0x06: // c
+  case 0x06: // c -> c 
     kbSend(0x21);
     break;
 
-  case 0x19: // v
+  case 0x19: // v -> v 
     kbSend(0x2a);
     break;
 
-  case 0x05: // b
+  case 0x05: // b -> b 
     kbSend(0x32);
     break;
 
-  case 0x11: // n
+  case 0x11: // n -> n 
     kbSend(0x31);
     break;
 
-  case 0x10: // m
+  case 0x10: // m -> m 
     kbSend(0x3a);
     break;
 
-  case 0x36: // ,
+  case 0x36: // , -> , 
     kbSend(0x41);
     break;
 
-  case 0x37: // .
+  case 0x37: // . -> . 
     kbSend(0x49);
     break;
 
-  case 0x38: // num_slash
+  case 0x38: // num_slash -> num_slash 
     kbSend(0xe0);
     kbSend(0x4a);
     break;
 
-  case 0x2c: // space
+  case 0x2c: // space -> space 
     kbSend(0x29);
     break;
 
-  case 0x52: // up
+  case 0x52: // up -> up 
     kbSend(0xe0);
     kbSend(0x75);
     break;
 
-  case 0x50: // left
+  case 0x50: // left -> left 
     kbSend(0xe0);
     kbSend(0x6b);
     break;
 
-  case 0x51: // down
+  case 0x51: // down -> down 
     kbSend(0xe0);
     kbSend(0x72);
     break;
 
-  case 0x4f: // right
+  case 0x4f: // right -> right 
     kbSend(0xe0);
     kbSend(0x74);
     break;
@@ -417,72 +417,72 @@ void KbdRptParser::OnKeyUp(uint8_t mod, uint8_t key)
   Serial.println((char)key);
 
   switch(key) {
-  case 0x29: // esc
+  case 0x29: // esc -> esc
     kbSend(0xf0);
     kbSend(0x76);
     break;
 
-  case 0x3a: // f1
+  case 0x3a: // f1 -> f1
     kbSend(0xf0);
     kbSend(0x05);
     break;
 
-  case 0x3b: // f2
+  case 0x3b: // f2 -> f2
     kbSend(0xf0);
     kbSend(0x06);
     break;
 
-  case 0x3c: // f3
+  case 0x3c: // f3 -> f3
     kbSend(0xf0);
     kbSend(0x04);
     break;
 
-  case 0x3d: // f4
+  case 0x3d: // f4 -> f4
     kbSend(0xf0);
     kbSend(0x0c);
     break;
 
-  case 0x3e: // f5
+  case 0x3e: // f5 -> f5
     kbSend(0xf0);
     kbSend(0x03);
     break;
 
-  case 0x3f: // f6
+  case 0x3f: // f6 -> f6
     kbSend(0xf0);
     kbSend(0x0b);
     break;
 
-  case 0x40: // f7
+  case 0x40: // f7 -> f7
     kbSend(0xf0);
     kbSend(0x83);
     break;
 
-  case 0x41: // f8
+  case 0x41: // f8 -> f8
     kbSend(0xf0);
     kbSend(0x0a);
     break;
 
-  case 0x42: // f9
+  case 0x42: // f9 -> f9
     kbSend(0xf0);
     kbSend(0x01);
     break;
 
-  case 0x43: // f10
+  case 0x43: // f10 -> f10
     kbSend(0xf0);
     kbSend(0x09);
     break;
 
-  case 0x44: // f11
+  case 0x44: // f11 -> f11
     kbSend(0xf0);
     kbSend(0x78);
     break;
 
-  case 0x45: // f12
+  case 0x45: // f12 -> f12
     kbSend(0xf0);
     kbSend(0x07);
     break;
 
-  case 0x46: // print_screen
+  case 0x46: // print_screen -> print_screen
     kbSend(0xe0);
     kbSend(0xf0);
     kbSend(0x7c);
@@ -491,331 +491,331 @@ void KbdRptParser::OnKeyUp(uint8_t mod, uint8_t key)
     kbSend(0x12);
     break;
 
-  case 0x47: // scroll_lock
+  case 0x47: // scroll_lock -> scroll_lock
     kbSend(0xf0);
     kbSend(0x7e);
     break;
 
-  case 0x48: // pause
+  case 0x48: // pause -> pause
 
     break;
 
-  case 0x49: // insert
+  case 0x49: // insert -> insert
     kbSend(0xe0);
     kbSend(0xf0);
     kbSend(0x70);
     break;
 
-  case 0x4a: // home
+  case 0x4a: // home -> home
     kbSend(0xe0);
     kbSend(0xf0);
     kbSend(0x6c);
     break;
 
-  case 0x4b: // page_up
+  case 0x4b: // page_up -> page_up
     kbSend(0xe0);
     kbSend(0xf0);
     kbSend(0x7d);
     break;
 
-  case 0x4c: // delete
+  case 0x4c: // delete -> delete
     kbSend(0xe0);
     kbSend(0xf0);
     kbSend(0x71);
     break;
 
-  case 0x4d: // end
+  case 0x4d: // end -> end
     kbSend(0xe0);
     kbSend(0xf0);
     kbSend(0x69);
     break;
 
-  case 0x4e: // page_down
+  case 0x4e: // page_down -> page_down
     kbSend(0xe0);
     kbSend(0xf0);
     kbSend(0x7a);
     break;
 
-  case 0x35: // `
+  case 0x35: // ` -> `
     kbSend(0xf0);
     kbSend(0x0e);
     break;
 
-  case 0x1e: // 1
+  case 0x1e: // 1 -> 1
     kbSend(0xf0);
     kbSend(0x16);
     break;
 
-  case 0x1f: // 2
+  case 0x1f: // 2 -> 2
     kbSend(0xf0);
     kbSend(0x1e);
     break;
 
-  case 0x20: // 3
+  case 0x20: // 3 -> 3
     kbSend(0xf0);
     kbSend(0x26);
     break;
 
-  case 0x21: // 4
+  case 0x21: // 4 -> 4
     kbSend(0xf0);
     kbSend(0x25);
     break;
 
-  case 0x22: // 5
+  case 0x22: // 5 -> 5
     kbSend(0xf0);
     kbSend(0x2e);
     break;
 
-  case 0x23: // 6
+  case 0x23: // 6 -> 6
     kbSend(0xf0);
     kbSend(0x36);
     break;
 
-  case 0x24: // 7
+  case 0x24: // 7 -> 7
     kbSend(0xf0);
     kbSend(0x3d);
     break;
 
-  case 0x25: // 8
+  case 0x25: // 8 -> 8
     kbSend(0xf0);
     kbSend(0x3e);
     break;
 
-  case 0x26: // 9
+  case 0x26: // 9 -> 9
     kbSend(0xf0);
     kbSend(0x46);
     break;
 
-  case 0x27: // 0
+  case 0x27: // 0 -> 0
     kbSend(0xf0);
     kbSend(0x45);
     break;
 
-  case 0x2d: // -
+  case 0x2d: // - -> -
     kbSend(0xf0);
     kbSend(0x4e);
     break;
 
-  case 0x2e: // =
+  case 0x2e: // = -> =
     kbSend(0xf0);
     kbSend(0x55);
     break;
 
-  case 0x2a: // backspace
+  case 0x2a: // backspace -> backspace
     kbSend(0xf0);
     kbSend(0x66);
     break;
 
-  case 0x2b: // tab
+  case 0x2b: // tab -> tab
     kbSend(0xf0);
     kbSend(0x0d);
     break;
 
-  case 0x14: // q
+  case 0x14: // q -> q
     kbSend(0xf0);
     kbSend(0x15);
     break;
 
-  case 0x1a: // w
+  case 0x1a: // w -> w
     kbSend(0xf0);
     kbSend(0x1d);
     break;
 
-  case 0x08: // e
+  case 0x08: // e -> e
     kbSend(0xf0);
     kbSend(0x24);
     break;
 
-  case 0x15: // r
+  case 0x15: // r -> r
     kbSend(0xf0);
     kbSend(0x2d);
     break;
 
-  case 0x17: // t
+  case 0x17: // t -> t
     kbSend(0xf0);
     kbSend(0x2c);
     break;
 
-  case 0x1c: // y
+  case 0x1c: // y -> y
     kbSend(0xf0);
     kbSend(0x35);
     break;
 
-  case 0x18: // u
+  case 0x18: // u -> u
     kbSend(0xf0);
     kbSend(0x3c);
     break;
 
-  case 0x0c: // i
+  case 0x0c: // i -> i
     kbSend(0xf0);
     kbSend(0x43);
     break;
 
-  case 0x12: // o
+  case 0x12: // o -> o
     kbSend(0xf0);
     kbSend(0x44);
     break;
 
-  case 0x13: // p
+  case 0x13: // p -> p
     kbSend(0xf0);
     kbSend(0x4d);
     break;
 
-  case 0x2f: // [
+  case 0x2f: // [ -> [
     kbSend(0xf0);
     kbSend(0x54);
     break;
 
-  case 0x30: // ]
+  case 0x30: // ] -> ]
     kbSend(0xf0);
     kbSend(0x5b);
     break;
 
-  case 0x31: // \\
+  case 0x31: // \\ -> \\
     kbSend(0xf0);
     kbSend(0x5d);
     break;
 
-  case 0x39: // caps_lock
+  case 0x39: // caps_lock -> caps_lock
     kbSend(0xf0);
     kbSend(0x58);
     break;
 
-  case 0x04: // a
+  case 0x04: // a -> a
     kbSend(0xf0);
     kbSend(0x1c);
     break;
 
-  case 0x16: // s
+  case 0x16: // s -> s
     kbSend(0xf0);
     kbSend(0x1b);
     break;
 
-  case 0x07: // d
+  case 0x07: // d -> d
     kbSend(0xf0);
     kbSend(0x23);
     break;
 
-  case 0x09: // f
+  case 0x09: // f -> f
     kbSend(0xf0);
     kbSend(0x2b);
     break;
 
-  case 0x0a: // g
+  case 0x0a: // g -> g
     kbSend(0xf0);
     kbSend(0x34);
     break;
 
-  case 0x0b: // h
+  case 0x0b: // h -> h
     kbSend(0xf0);
     kbSend(0x33);
     break;
 
-  case 0x0d: // j
+  case 0x0d: // j -> j
     kbSend(0xf0);
     kbSend(0x3b);
     break;
 
-  case 0x0e: // k
+  case 0x0e: // k -> k
     kbSend(0xf0);
     kbSend(0x42);
     break;
 
-  case 0x0f: // l
+  case 0x0f: // l -> l
     kbSend(0xf0);
     kbSend(0x4b);
     break;
 
-  case 0x33: // ;
+  case 0x33: // ; -> ;
     kbSend(0xf0);
     kbSend(0x4c);
     break;
 
-  case 0x34: // '
+  case 0x34: // ' -> '
     kbSend(0xf0);
     kbSend(0x52);
     break;
 
-  case 0x28: // enter
+  case 0x28: // enter -> enter
     kbSend(0xf0);
     kbSend(0x5a);
     break;
 
-  case 0x1d: // z
+  case 0x1d: // z -> z
     kbSend(0xf0);
     kbSend(0x1a);
     break;
 
-  case 0x1b: // x
+  case 0x1b: // x -> x
     kbSend(0xf0);
     kbSend(0x22);
     break;
 
-  case 0x06: // c
+  case 0x06: // c -> c
     kbSend(0xf0);
     kbSend(0x21);
     break;
 
-  case 0x19: // v
+  case 0x19: // v -> v
     kbSend(0xf0);
     kbSend(0x2a);
     break;
 
-  case 0x05: // b
+  case 0x05: // b -> b
     kbSend(0xf0);
     kbSend(0x32);
     break;
 
-  case 0x11: // n
+  case 0x11: // n -> n
     kbSend(0xf0);
     kbSend(0x31);
     break;
 
-  case 0x10: // m
+  case 0x10: // m -> m
     kbSend(0xf0);
     kbSend(0x3a);
     break;
 
-  case 0x36: // ,
+  case 0x36: // , -> ,
     kbSend(0xf0);
     kbSend(0x41);
     break;
 
-  case 0x37: // .
+  case 0x37: // . -> .
     kbSend(0xf0);
     kbSend(0x49);
     break;
 
-  case 0x38: // num_slash
+  case 0x38: // num_slash -> num_slash
     kbSend(0xe0);
     kbSend(0xf0);
     kbSend(0x4a);
     break;
 
-  case 0x2c: // space
+  case 0x2c: // space -> space
     kbSend(0xf0);
     kbSend(0x29);
     break;
 
-  case 0x52: // up
+  case 0x52: // up -> up
     kbSend(0xe0);
     kbSend(0xf0);
     kbSend(0x75);
     break;
 
-  case 0x50: // left
+  case 0x50: // left -> left
     kbSend(0xe0);
     kbSend(0xf0);
     kbSend(0x6b);
     break;
 
-  case 0x51: // down
+  case 0x51: // down -> down
     kbSend(0xe0);
     kbSend(0xf0);
     kbSend(0x72);
     break;
 
-  case 0x4f: // right
+  case 0x4f: // right -> right
     kbSend(0xe0);
     kbSend(0xf0);
     kbSend(0x74);

@@ -22,7 +22,8 @@ const keymap = keymapContents.replace(/\n$/, '').split('\n')
 const keyDownCases = keymap
   .map(km => {
     const usbCode = km[0];
-    const ps2Key = km[1];
+    const usbKey = km[1];
+    const ps2Key = km[2];
 
     const ps2entry = ps2map[ps2Key];
     const kbCommands = ps2entry.down
@@ -30,14 +31,15 @@ const keyDownCases = keymap
       .map(hexCode => `    kbSend(${hexCode.trim()});`)
       .join('\n');
 
-    return `  case ${usbCode}: // ${ps2Key}\n${kbCommands}\n    break;\n`;
+    return `  case ${usbCode}: // ${usbKey} -> ${ps2Key} \n${kbCommands}\n    break;\n`;
   }).join('\n');
 
 // keyUp
 const keyUpCases = keymap
   .map(km => {
     const usbCode = km[0];
-    const ps2Key = km[1];
+    const usbKey = km[1];
+    const ps2Key = km[2];
 
     const ps2entry = ps2map[ps2Key];
     const kbCommands = ps2entry.up
@@ -45,7 +47,7 @@ const keyUpCases = keymap
       .map(hexCode => `    kbSend(${hexCode.trim()});`)
       .join('\n');
 
-    return `  case ${usbCode}: // ${ps2Key}\n${kbCommands}\n    break;\n`;
+    return `  case ${usbCode}: // ${usbKey} -> ${ps2Key}\n${kbCommands}\n    break;\n`;
   }).join('\n');
 
 const codeStr = `// --- (AUTOGEN START) ---
